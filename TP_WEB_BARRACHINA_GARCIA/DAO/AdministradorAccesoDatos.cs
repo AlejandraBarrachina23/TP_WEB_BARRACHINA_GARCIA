@@ -7,12 +7,11 @@ using System.Data.SqlClient;
 
 namespace DAO
 {
-    
-       public class AdministradorAccesoDatos
+    public class AdministradorAccesoDatos
 
-        {
-            public static string RutaBaseDatos = "data source = localhost\\SQLEXPRESS; initial catalog= PROMOCION_DB; integrated security=sspi";
-
+    {
+   
+            public static string RutaBaseDatos = "data source = localhost\\SQLEXPRESS; initial catalog= BARRACHINA_DB; integrated security=sspi";
             private SqlConnection conexionSQL;
             private SqlCommand comandoSQL;
             private SqlDataReader lectorDatos;
@@ -72,6 +71,7 @@ namespace DAO
 
                 lectorDatos.Close();
             }
-        }
-}
 
+
+        
+    }
