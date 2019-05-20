@@ -10,68 +10,69 @@ namespace DAO
     public class AdministradorAccesoDatos
 
     {
-   
-            public static string RutaBaseDatos = "data source = localhost\\SQLEXPRESS; initial catalog= BARRACHINA_DB; integrated security=sspi";
-            private SqlConnection conexionSQL;
-            private SqlCommand comandoSQL;
-            private SqlDataReader lectorDatos;
 
-            public AdministradorAccesoDatos()
-            {
+        public static string RutaBaseDatos = "data source = localhost\\SQLEXPRESS; initial catalog= PROMOCION_DB; integrated security=sspi";
+        private SqlConnection conexionSQL;
+        private SqlCommand comandoSQL;
+        private SqlDataReader lectorDatos;
 
-                conexionSQL = new SqlConnection(RutaBaseDatos);
-            }
+        public AdministradorAccesoDatos()
+        {
 
-            public SqlCommand Comando
-            {
-                get { return comandoSQL; }
-            }
+            conexionSQL = new SqlConnection(RutaBaseDatos);
+        }
 
-            public SqlDataReader LectorDatos
-            {
-                get { return lectorDatos; }
-            }
+        public SqlCommand Comando
+        {
+            get { return comandoSQL; }
+        }
 
-            public void DefinirTipoComando(string consulta)
-            {
+        public SqlDataReader LectorDatos
+        {
+            get { return lectorDatos; }
+        }
 
-                comandoSQL = new SqlCommand();
-                comandoSQL.CommandType = System.Data.CommandType.Text;
-                comandoSQL.CommandText = consulta;
-            }
+        public void DefinirTipoComando(string consulta)
+        {
 
-            public void AbrirConexion()
-            {
+            comandoSQL = new SqlCommand();
+            comandoSQL.CommandType = System.Data.CommandType.Text;
+            comandoSQL.CommandText = consulta;
+        }
 
-                conexionSQL.Open();
-            }
+        public void AbrirConexion()
+        {
 
-            public void CerrarConexion()
-            {
+            conexionSQL.Open();
+        }
 
-                conexionSQL.Close();
-            }
+        public void CerrarConexion()
+        {
 
-            public void EjecutarAccion()
-            {
+            conexionSQL.Close();
+        }
 
-                comandoSQL.Connection = conexionSQL;
-                comandoSQL.ExecuteNonQuery();
-            }
+        public void EjecutarAccion()
+        {
 
-            public void EjecutarConsulta()
-            {
+            comandoSQL.Connection = conexionSQL;
+            comandoSQL.ExecuteNonQuery();
+        }
 
-                comandoSQL.Connection = conexionSQL;
-                lectorDatos = comandoSQL.ExecuteReader();
-            }
+        public void EjecutarConsulta()
+        {
 
-            public void CerrarReader()
-            {
+            comandoSQL.Connection = conexionSQL;
+            lectorDatos = comandoSQL.ExecuteReader();
+        }
 
-                lectorDatos.Close();
-            }
+        public void CerrarReader()
+        {
+
+            lectorDatos.Close();
+        }
 
 
-        
+
     }
+}

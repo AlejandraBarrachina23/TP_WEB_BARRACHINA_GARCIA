@@ -2,12 +2,9 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-  
 
  <h1>Index</h1>
-    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-       <asp:Button ID="Button1" runat="server" Text="Button" />
-
-  
+    <asp:TextBox ID="tboxVoucher" runat="server"></asp:TextBox>
+    <asp:Button ID="btnAceptar" runat="server" Text="Siguiente" OnClick="btnAceptar_Click" />
 
 </asp:Content>
