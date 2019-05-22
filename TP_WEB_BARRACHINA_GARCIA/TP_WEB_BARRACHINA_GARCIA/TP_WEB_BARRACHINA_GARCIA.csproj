@@ -133,6 +133,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\2f82036a-52dc-475d-ba2a-8d1d3eb2b3f4_1.896bb387e318320e4ec0f145692305e6.jpeg" />
+    <Content Include="images\61679ihvfzL._SY355_.jpg" />
+    <Content Include="images\81i9jD+6HLL._SY450_.jpg" />
     <Content Include="Registro.aspx" />
     <Content Include="Productos.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
