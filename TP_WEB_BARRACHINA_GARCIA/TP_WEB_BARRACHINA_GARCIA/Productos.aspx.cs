@@ -16,8 +16,14 @@ namespace TP_WEB_BARRACHINA_GARCIA
             ProductoNegocio unProductoNegocio = new ProductoNegocio();
             List<Producto> ListadoProducto = unProductoNegocio.ListadoProductos();
 
-            lblNombreProducto.Text = ListadoProducto[0].Nombre;
-            lblDescripcion.Text = ListadoProducto[0].Descripcion;
+            lblPremioUno.Text = ListadoProducto[0].Nombre;
+            lblDescripcionPremioUno.Text = ListadoProducto[0].Descripcion;
+            lblPremioDos.Text = ListadoProducto[1].Nombre;
+            lblDescripcionPremioDos.Text = ListadoProducto[1].Descripcion;
+            lblPremioTres.Text = ListadoProducto[2].Nombre;
+            lblDescripcionPremioTres.Text = ListadoProducto[2].Descripcion;
+            lblPremioCuatro.Text = ListadoProducto[3].Nombre;
+            lblDescripcionPremioCuatro.Text = ListadoProducto[3].Descripcion;
 
         }
     }
