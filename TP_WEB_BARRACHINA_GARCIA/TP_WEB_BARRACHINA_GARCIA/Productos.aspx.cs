@@ -26,5 +26,10 @@ namespace TP_WEB_BARRACHINA_GARCIA
             lblDescripcionPremioCuatro.Text = ListadoProducto[3].Descripcion;
 
         }
+
+        protected void btnAceptar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Registro.aspx");
+        }
     }
 }
