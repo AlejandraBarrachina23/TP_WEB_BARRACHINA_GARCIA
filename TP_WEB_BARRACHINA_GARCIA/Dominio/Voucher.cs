@@ -9,7 +9,9 @@ namespace Dominio
     public class Voucher
     {
         public string CodigoVoucher { get; set; }
-        public bool Ganador { get; set; }
+        public string Participante { get; set; }
+        public string CodigoProducto { get; set; }
+        public bool Estado { get; set; }
 
     }
 }

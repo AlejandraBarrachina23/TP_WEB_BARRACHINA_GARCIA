@@ -33,6 +33,8 @@ namespace TP_WEB_BARRACHINA_GARCIA
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
+
+           // Session.Add("CodigoProducto", );
             Response.Redirect("Registro.aspx");
         }
     }

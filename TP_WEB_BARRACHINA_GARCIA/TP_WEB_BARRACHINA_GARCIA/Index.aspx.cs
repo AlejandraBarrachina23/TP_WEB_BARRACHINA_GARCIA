@@ -25,12 +25,14 @@ namespace TP_WEB_BARRACHINA_GARCIA
 
             if (unVoucher.BusquedaVoucher(unNuevoVoucher))
             {
+                Session.Add("CodigoVoucher", tboxVoucher);
                 Response.Redirect("Premios.aspx");
             }
 
             else {
 
-                
+                Session.Add("CodigoIncorrecto",tboxVoucher.Text);
+                Response.Redirect("Error.aspx");
             }
         }
     }

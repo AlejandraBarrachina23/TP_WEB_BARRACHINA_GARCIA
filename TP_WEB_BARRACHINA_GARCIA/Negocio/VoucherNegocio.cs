@@ -16,7 +16,7 @@ namespace Negocio
         public bool BusquedaVoucher(Voucher unVoucher)
         {
 
-            AccederDatos.DefinirTipoComando("Select CodigoVoucher from Voucher");
+            AccederDatos.DefinirTipoComando("Select CodigoVoucher from Vouchers");
             AccederDatos.AbrirConexion();
             AccederDatos.EjecutarAccion();
             AccederDatos.EjecutarConsulta();
@@ -29,14 +29,24 @@ namespace Negocio
                     AccederDatos.CerrarConexion();
                     AccederDatos.CerrarReader();
                     return true;
-
                 }
             }
 
             AccederDatos.CerrarConexion();
             AccederDatos.CerrarReader();
             return false;
+        }
 
+        public void AsignacionVoucher(Voucher unVoucher) {
+
+            AccederDatos.AbrirConexion();
+            AccederDatos.DefinirTipoComando("UPDATE Vouchers SET Participante=@Participante,Estado=@Estado WHERE CodigoVoucher = " + unVoucher.CodigoVoucher);
+            AccederDatos.Comando.Parameters.Clear();
+            AccederDatos.Comando.Parameters.AddWithValue("@Participante", unVoucher.Participante);
+            AccederDatos.Comando.Parameters.AddWithValue("@Estado", unVoucher.Estado);
+            AccederDatos.EjecutarAccion();
+            AccederDatos.CerrarConexion();
+            
         }
     }
 }

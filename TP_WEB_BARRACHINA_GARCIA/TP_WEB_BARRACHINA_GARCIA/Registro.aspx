@@ -35,7 +35,7 @@
 		    <asp:Label ID="lblCP" runat="server" Text="Código Postal:"></asp:Label>
 		    <asp:TextBox ID="tboxCP" runat="server"></asp:TextBox>
 		</div>
-		<asp:Button ID="btnAceptar" runat="server" Text="Registar" />
+		    <asp:Button ID="btnAceptar" runat="server" Text="Registar" OnClientClick="btnAceptar_Click" OnClick="btnAceptar_Click" />
     </div>
 
 </asp:Content>
