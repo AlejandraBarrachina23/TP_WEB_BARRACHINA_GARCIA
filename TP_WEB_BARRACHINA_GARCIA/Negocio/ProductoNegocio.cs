@@ -26,6 +26,7 @@ namespace Negocio
                 Producto unProducto = new Producto();
                 unProducto.Nombre = AccesoDatos.LectorDatos["Nombre"].ToString();
                 unProducto.Descripcion = AccesoDatos.LectorDatos["Descripcion"].ToString();
+                unProducto.Imagen = AccesoDatos.LectorDatos["Imagen"].ToString();
                 ListadoProductos.Add(unProducto);
             }
 

@@ -25,7 +25,7 @@ namespace TP_WEB_BARRACHINA_GARCIA
 
             if (unVoucher.BusquedaVoucher(unNuevoVoucher))
             {
-                Response.Redirect("Productos.aspx");
+                Response.Redirect("Premios.aspx");
             }
 
             else {

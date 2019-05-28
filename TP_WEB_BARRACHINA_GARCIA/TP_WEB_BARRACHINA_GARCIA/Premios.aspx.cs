@@ -18,12 +18,16 @@ namespace TP_WEB_BARRACHINA_GARCIA
 
             lblPremioUno.Text = ListadoProducto[0].Nombre;
             lblDescripcionPremioUno.Text = ListadoProducto[0].Descripcion;
+            ImgPremioUno.ImageUrl = ListadoProducto[0].Imagen;
             lblPremioDos.Text = ListadoProducto[1].Nombre;
             lblDescripcionPremioDos.Text = ListadoProducto[1].Descripcion;
+            ImgPremioDos.ImageUrl = ListadoProducto[1].Imagen;
             lblPremioTres.Text = ListadoProducto[2].Nombre;
             lblDescripcionPremioTres.Text = ListadoProducto[2].Descripcion;
+            ImgPremioTres.ImageUrl = ListadoProducto[2].Imagen;
             lblPremioCuatro.Text = ListadoProducto[3].Nombre;
             lblDescripcionPremioCuatro.Text = ListadoProducto[3].Descripcion;
+            ImgPremioCuatro.ImageUrl = ListadoProducto[3].Imagen;
 
         }
 

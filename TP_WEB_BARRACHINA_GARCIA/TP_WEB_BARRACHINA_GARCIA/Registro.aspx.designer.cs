@@ -22,13 +22,13 @@ namespace TP_WEB_BARRACHINA_GARCIA {
         protected global::System.Web.UI.WebControls.Label lblApellido;
         
         /// <summary>
-        /// Control TxtApellido.
+        /// Control tboxApellido.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtApellido;
+        protected global::System.Web.UI.WebControls.TextBox tboxApellido;
         
         /// <summary>
         /// Control lblNombre.
@@ -40,13 +40,13 @@ namespace TP_WEB_BARRACHINA_GARCIA {
         protected global::System.Web.UI.WebControls.Label lblNombre;
         
         /// <summary>
-        /// Control TextBox1.
+        /// Control tboxNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox tboxNombre;
         
         /// <summary>
         /// Control lblDNI.
@@ -58,13 +58,13 @@ namespace TP_WEB_BARRACHINA_GARCIA {
         protected global::System.Web.UI.WebControls.Label lblDNI;
         
         /// <summary>
-        /// Control TextBox2.
+        /// Control tboxDNI.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox tboxDNI;
         
         /// <summary>
         /// Control lblMail.
@@ -76,13 +76,13 @@ namespace TP_WEB_BARRACHINA_GARCIA {
         protected global::System.Web.UI.WebControls.Label lblMail;
         
         /// <summary>
-        /// Control TextBox3.
+        /// Control tboxMail.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox tboxMail;
         
         /// <summary>
         /// Control lblDireccion.
@@ -94,13 +94,13 @@ namespace TP_WEB_BARRACHINA_GARCIA {
         protected global::System.Web.UI.WebControls.Label lblDireccion;
         
         /// <summary>
-        /// Control TextBox4.
+        /// Control tboxDireccion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox tboxDireccion;
         
         /// <summary>
         /// Control lblCiudad.
@@ -112,13 +112,13 @@ namespace TP_WEB_BARRACHINA_GARCIA {
         protected global::System.Web.UI.WebControls.Label lblCiudad;
         
         /// <summary>
-        /// Control TextBox5.
+        /// Control tboxCiudad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        protected global::System.Web.UI.WebControls.TextBox tboxCiudad;
         
         /// <summary>
         /// Control lblCP.
@@ -130,21 +130,21 @@ namespace TP_WEB_BARRACHINA_GARCIA {
         protected global::System.Web.UI.WebControls.Label lblCP;
         
         /// <summary>
-        /// Control TextBox6.
+        /// Control tboxCP.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox6;
+        protected global::System.Web.UI.WebControls.TextBox tboxCP;
         
         /// <summary>
-        /// Control Button1.
+        /// Control btnAceptar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnAceptar;
     }
 }

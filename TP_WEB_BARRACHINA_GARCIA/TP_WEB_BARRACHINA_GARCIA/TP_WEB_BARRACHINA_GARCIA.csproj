@@ -137,7 +137,7 @@
     <Content Include="images\61679ihvfzL._SY355_.jpg" />
     <Content Include="images\81i9jD+6HLL._SY450_.jpg" />
     <Content Include="Registro.aspx" />
-    <Content Include="Productos.aspx" />
+    <Content Include="Premios.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -203,12 +203,12 @@
       <DependentUpon>Registro.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Productos.aspx.cs">
-      <DependentUpon>Productos.aspx</DependentUpon>
+    <Compile Include="Premios.aspx.cs">
+      <DependentUpon>Premios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Productos.aspx.designer.cs">
-      <DependentUpon>Productos.aspx</DependentUpon>
+    <Compile Include="Premios.aspx.designer.cs">
+      <DependentUpon>Premios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

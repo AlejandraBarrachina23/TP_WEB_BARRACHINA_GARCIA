@@ -40,13 +40,13 @@ namespace TP_WEB_BARRACHINA_GARCIA {
         protected global::System.Web.UI.WebControls.Label lblDescripcionPremioUno;
         
         /// <summary>
-        /// Control BtnAceptar.
+        /// Control BtnAceptarPremioUno.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnAceptar;
+        protected global::System.Web.UI.WebControls.Button BtnAceptarPremioUno;
         
         /// <summary>
         /// Control lblPremioDos.
@@ -76,13 +76,13 @@ namespace TP_WEB_BARRACHINA_GARCIA {
         protected global::System.Web.UI.WebControls.Label lblDescripcionPremioDos;
         
         /// <summary>
-        /// Control Button1.
+        /// Control BtnAceptarPremioDos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button BtnAceptarPremioDos;
         
         /// <summary>
         /// Control lblPremioTres.
@@ -112,13 +112,13 @@ namespace TP_WEB_BARRACHINA_GARCIA {
         protected global::System.Web.UI.WebControls.Label lblDescripcionPremioTres;
         
         /// <summary>
-        /// Control Button2.
+        /// Control btnAceptarPremioTres.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button btnAceptarPremioTres;
         
         /// <summary>
         /// Control lblPremioCuatro.
@@ -148,12 +148,12 @@ namespace TP_WEB_BARRACHINA_GARCIA {
         protected global::System.Web.UI.WebControls.Label lblDescripcionPremioCuatro;
         
         /// <summary>
-        /// Control Button3.
+        /// Control btnAceptarPremioCuatro.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button3;
+        protected global::System.Web.UI.WebControls.Button btnAceptarPremioCuatro;
     }
 }
