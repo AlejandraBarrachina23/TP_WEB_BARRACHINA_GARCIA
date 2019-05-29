@@ -33,8 +33,14 @@ namespace TP_WEB_BARRACHINA_GARCIA
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
+            Button Boton = (Button)sender;
+            string BotonActivo = Boton.ID;
 
-           // Session.Add("CodigoProducto", );
+            if (BotonActivo == "BtnAceptarPremioUno") Session["CodigoProducto"] = 1;
+            else if (BotonActivo == "BtnAceptarPremioDos") Session["CodigoProducto"] = 2;
+            else if (BotonActivo == "BtnAceptarPremioTres") Session["CodigoProducto"] = 3;
+            else if (BotonActivo == "BtnAceptarPremioCuatro") Session["CodigoProducto"] = 4;
+
             Response.Redirect("Registro.aspx");
         }
     }

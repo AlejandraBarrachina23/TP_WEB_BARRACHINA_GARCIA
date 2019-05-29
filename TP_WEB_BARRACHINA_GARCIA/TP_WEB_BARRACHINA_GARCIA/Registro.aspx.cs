@@ -33,6 +33,7 @@ namespace TP_WEB_BARRACHINA_GARCIA
 
             unVoucher = (Voucher)Session["Voucher"];
             unVoucher.Participante = unNuevoUsuario.DNI;
+            unVoucher.CodigoProducto = Session["CodigoProducto"].ToString();
             unVoucher.Estado = true;
 
             unUsuarioNegocio.AgregarUsuario(unNuevoUsuario);
