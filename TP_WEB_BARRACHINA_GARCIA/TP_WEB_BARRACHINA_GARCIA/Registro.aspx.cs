@@ -31,12 +31,12 @@ namespace TP_WEB_BARRACHINA_GARCIA
             unNuevoUsuario.Ciudad = tboxCiudad.Text;
             unNuevoUsuario.CodigoPostal = tboxCP.Text;
 
-            //unVoucher.CodigoVoucher = Session["CodigoVoucher"].ToString();
-            //unVoucher.Participante = unNuevoUsuario.DNI;
-            //unVoucher.Estado = true;
+            unVoucher = (Voucher)Session["Voucher"];
+            unVoucher.Participante = unNuevoUsuario.DNI;
+            unVoucher.Estado = true;
 
             unUsuarioNegocio.AgregarUsuario(unNuevoUsuario);
-            //unVoucherNegocio.AsignacionVoucher(unVoucher);
+            unVoucherNegocio.AsignacionVoucher(unVoucher);
 
         }
     }

@@ -40,7 +40,7 @@ namespace Negocio
         public void AsignacionVoucher(Voucher unVoucher) {
 
             AccederDatos.AbrirConexion();
-            AccederDatos.DefinirTipoComando("UPDATE Vouchers SET Participante=@Participante,Estado=@Estado WHERE CodigoVoucher = " + unVoucher.CodigoVoucher);
+            AccederDatos.DefinirTipoComando("UPDATE Vouchers SET Participante=@Participante,Estado=@Estado WHERE CodigoVoucher = '" + unVoucher.CodigoVoucher +"'");
             AccederDatos.Comando.Parameters.Clear();
             AccederDatos.Comando.Parameters.AddWithValue("@Participante", unVoucher.Participante);
             AccederDatos.Comando.Parameters.AddWithValue("@Estado", unVoucher.Estado);

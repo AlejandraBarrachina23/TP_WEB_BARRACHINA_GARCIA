@@ -20,12 +20,14 @@ namespace TP_WEB_BARRACHINA_GARCIA
         {
             VoucherNegocio unVoucher = new VoucherNegocio();
             Voucher unNuevoVoucher = new Voucher();
+            
 
             unNuevoVoucher.CodigoVoucher = tboxVoucher.Text;
 
             if (unVoucher.BusquedaVoucher(unNuevoVoucher))
             {
-                Session.Add("CodigoVoucher", tboxVoucher);
+                unNuevoVoucher.CodigoVoucher = tboxVoucher.Text;
+                Session["Voucher"] = unNuevoVoucher;
                 Response.Redirect("Premios.aspx");
             }
 
