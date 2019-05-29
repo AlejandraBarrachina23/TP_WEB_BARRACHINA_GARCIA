@@ -25,6 +25,7 @@ namespace TP_WEB_BARRACHINA_GARCIA
         {
             Usuario unNuevoUsuario = new Usuario();
             Voucher unVoucher = new Voucher();
+            unVoucher = (Voucher)Session["Voucher"];
 
             if (!(bool)Session["RegistroUsuario"])
             {
@@ -42,11 +43,11 @@ namespace TP_WEB_BARRACHINA_GARCIA
 
             else {
 
-                //unVoucher.Participante = tboxDNI.Text;
-                
+                unNuevoUsuario.DNI = tboxDNI.Text;
+                unVoucher.Participante = unNuevoUsuario.DNI;
 
             }
-                unVoucher = (Voucher)Session["Voucher"];
+                
                 unVoucher.CodigoProducto = Session["CodigoProducto"].ToString();
                 unVoucher.Estado = true;            
                 unVoucherNegocio.AsignacionVoucher(unVoucher);
