@@ -22,6 +22,11 @@
         
         }
 
+        h1 {
+        
+        text-align:center;
+        }
+
         img {
         
             width:200px;
@@ -31,7 +36,7 @@
         }
 
     </style>    
-
+    <h1>Elige tu premio</h1>
     <div class ="main-container">
         <div class ="container-premios"> 
             <asp:Label ID="lblPremioUno" runat="server" Text="NombreProducto"></asp:Label>

@@ -10,7 +10,12 @@ using Negocio;
 namespace TP_WEB_BARRACHINA_GARCIA
 {
     public partial class About : Page
+
     {
+        private Usuario unUsuario = null;
+        private UsuarioNegocio unUsuarioNegocio = new UsuarioNegocio();
+        private VoucherNegocio unVoucherNegocio = new VoucherNegocio();
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -20,9 +25,7 @@ namespace TP_WEB_BARRACHINA_GARCIA
         {
             Usuario unNuevoUsuario = new Usuario();
             Voucher unVoucher = new Voucher();
-            UsuarioNegocio unUsuarioNegocio = new UsuarioNegocio();
-            VoucherNegocio unVoucherNegocio = new VoucherNegocio();
-
+            
             unNuevoUsuario.Nombre = tboxNombre.Text;
             unNuevoUsuario.Apellido = tboxApellido.Text;
             unNuevoUsuario.DNI = tboxDNI.Text;
@@ -39,6 +42,24 @@ namespace TP_WEB_BARRACHINA_GARCIA
             unUsuarioNegocio.AgregarUsuario(unNuevoUsuario);
             unVoucherNegocio.AsignacionVoucher(unVoucher);
 
+        }
+        //nofunciona
+        protected void tboxDNI_TextChanged(object sender, EventArgs e)
+        {
+            
+            unUsuario = unUsuarioNegocio.BusquedaUsuario(tboxDNI.Text);
+
+            if (unUsuario != null) {
+
+                tboxApellido.Text = unUsuario.Apellido;
+                tboxNombre.Text = unUsuario.Nombre;
+                tboxApellido.Text = unUsuario.Apellido;
+                tboxDNI.Text = unUsuario.DNI;
+                tboxMail.Text = unUsuario.Mail;
+                tboxDireccion.Text  = unUsuario.Direccion;
+                tboxCiudad.Text = unUsuario.Ciudad;
+                tboxCP.Text = unUsuario.CodigoPostal;
+            }
         }
     }
 }

@@ -6,7 +6,10 @@
     <h2><%: Title %>.</h2>
 
     <div id ="form-register">
-         
+        <div class="form-groups"> 
+		    <asp:Label ID="lblDNI" runat="server" Text="DNI:"></asp:Label>
+		    <asp:TextBox ID="tboxDNI" runat="server" OnTextChanged="tboxDNI_TextChanged"></asp:TextBox>
+        </div>
         <div class="form-groups">       
 		    <asp:Label ID="lblApellido" runat="server" Text="Apellido:"></asp:Label>
 	        <asp:TextBox ID="tboxApellido" runat="server"></asp:TextBox>
@@ -14,10 +17,6 @@
         <div class="form-groups"> 
             <asp:Label ID="lblNombre" runat="server" Text="Nombre:"></asp:Label>
 		    <asp:TextBox ID="tboxNombre" runat="server"></asp:TextBox>
-        </div>
-        <div class="form-groups"> 
-		    <asp:Label ID="lblDNI" runat="server" Text="DNI:"></asp:Label>
-		    <asp:TextBox ID="tboxDNI" runat="server"></asp:TextBox>
         </div>
 		<div class="form-groups"> 
             <asp:Label ID="lblMail" runat="server" Text="E-mail:"></asp:Label>
@@ -35,7 +34,7 @@
 		    <asp:Label ID="lblCP" runat="server" Text="Código Postal:"></asp:Label>
 		    <asp:TextBox ID="tboxCP" runat="server"></asp:TextBox>
 		</div>
-		    <asp:Button ID="btnAceptar" runat="server" Text="Registar" OnClientClick="btnAceptar_Click" OnClick="btnAceptar_Click" />
+		    <asp:Button ID="btnAceptar" runat="server" Text="Participar" OnClientClick="btnAceptar_Click" OnClick="btnAceptar_Click" />
     </div>
 
 </asp:Content>

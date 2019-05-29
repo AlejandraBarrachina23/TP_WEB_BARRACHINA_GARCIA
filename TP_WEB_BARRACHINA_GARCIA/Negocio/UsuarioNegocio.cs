@@ -20,5 +20,27 @@ namespace Negocio
             AccederDatos.EjecutarAccion();
             AccederDatos.CerrarConexion();
         }
+
+        public Usuario BusquedaUsuario(string NumeroDNI) {
+
+            Usuario unUsuario = new Usuario();
+            AccederDatos.AbrirConexion();
+            AccederDatos.DefinirTipoComando("SELECT * FROM Usuario WHERE DNI = " + NumeroDNI);
+            AccederDatos.EjecutarConsulta();
+            while (AccederDatos.LectorDatos.Read()) {
+
+                unUsuario.Nombre = AccederDatos.LectorDatos["Nombre"].ToString();
+                unUsuario.Apellido = AccederDatos.LectorDatos["Apellido"].ToString();
+                unUsuario.Direccion = AccederDatos.LectorDatos["Direccion"].ToString();
+                unUsuario.Ciudad = AccederDatos.LectorDatos["Ciudad"].ToString();
+                unUsuario.CodigoPostal = AccederDatos.LectorDatos["CodigoPostal"].ToString();
+                unUsuario.Mail = AccederDatos.LectorDatos["Mail"].ToString();
+                AccederDatos.CerrarConexion();
+                AccederDatos.CerrarReader();
+                return unUsuario;
+            }
+
+            return null;
+        }
     }
 }
