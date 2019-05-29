@@ -8,7 +8,7 @@
     <div id ="form-register">
         <div class="form-groups"> 
 		    <asp:Label ID="lblDNI" runat="server" Text="DNI:"></asp:Label>
-		    <asp:TextBox ID="tboxDNI" runat="server" OnTextChanged="tboxDNI_TextChanged"></asp:TextBox>
+		    <asp:TextBox ID="tboxDNI" runat="server" OnTextChanged="tboxDNI_TextChanged" AutoPostBack="true"></asp:TextBox>
         </div>
         <div class="form-groups">       
 		    <asp:Label ID="lblApellido" runat="server" Text="Apellido:"></asp:Label>
