@@ -13,10 +13,10 @@ namespace Negocio
     {
         AdministradorAccesoDatos AccederDatos = new AdministradorAccesoDatos();
 
-        public bool BusquedaVoucher(Voucher unVoucher)
+        public int BusquedaVoucher(Voucher unVoucher)
         {
 
-            AccederDatos.DefinirTipoComando("Select CodigoVoucher from Vouchers");
+            AccederDatos.DefinirTipoComando("Select CodigoVoucher, Estado from Vouchers");
             AccederDatos.AbrirConexion();
             AccederDatos.EjecutarAccion();
             AccederDatos.EjecutarConsulta();
@@ -25,16 +25,23 @@ namespace Negocio
             {
                 if (AccederDatos.LectorDatos["CodigoVoucher"].ToString().ToUpper() == unVoucher.CodigoVoucher.ToUpper())
                 {
+                    if ((bool)AccederDatos.LectorDatos["Estado"]) {
 
-                    AccederDatos.CerrarConexion();
+                        AccederDatos.CerrarConexion(); //Voucher asignado
+                        AccederDatos.CerrarReader();
+                        return 1;
+
+                    }
+
+                    AccederDatos.CerrarConexion(); //Voucher sin asignar
                     AccederDatos.CerrarReader();
-                    return true;
+                    return 2;
                 }
             }
 
             AccederDatos.CerrarConexion();
             AccederDatos.CerrarReader();
-            return false;
+            return 3; //Voucher que no existe
         }
 
         public void AsignacionVoucher(Voucher unVoucher) {

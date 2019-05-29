@@ -2,5 +2,5 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <asp:Label ID="lblMensajeError" runat="server" Text="MensajeError"></asp:Label>
-
+    <asp:Label ID="lblRedireccion" runat="server" Text="Seras redireccionado al inicio"></asp:Label>
 </asp:Content>

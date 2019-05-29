@@ -4,7 +4,7 @@
 
 
  <h1>Index</h1>
-    <asp:TextBox ID="tboxVoucher" runat="server"></asp:TextBox>
+    <asp:TextBox ID="tboxVoucher" runat="server"></asp:TextBox><br />
     <asp:Button ID="btnAceptar" runat="server" Text="Siguiente" OnClick="btnAceptar_Click" />
 
 </asp:Content>
