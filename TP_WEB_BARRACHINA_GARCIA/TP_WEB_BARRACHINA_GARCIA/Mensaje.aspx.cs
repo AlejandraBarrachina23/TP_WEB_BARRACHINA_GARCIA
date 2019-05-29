@@ -13,9 +13,10 @@ namespace TP_WEB_BARRACHINA_GARCIA
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            lblMensajeError.Text = Session["Error"].ToString();
-            
+            lblMensajeError.Text = Session["Mensaje"].ToString();
            // Response.Redirect("Index.aspx");
+            Response.AddHeader("REFRESH", "5;URL=Index.aspx");
+            
 
         }
     }
