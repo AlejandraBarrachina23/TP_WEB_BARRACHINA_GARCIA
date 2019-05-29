@@ -42,13 +42,13 @@
             <asp:Label ID="lblPremioUno" runat="server" Text="NombreProducto"></asp:Label>
             <asp:Image ID="ImgPremioUno" runat="server"/>
             <asp:Label ID="lblDescripcionPremioUno" runat="server" Text="Label"></asp:Label><br />
-            <asp:Button ID="BtnAceptarPremioUno" runat="server" Text="Elegir" OnClick="btnAceptar_Click"/>
+            <asp:Button ID="btnAceptarPremioUno" runat="server" Text="Elegir" OnClick="btnAceptar_Click"/>
         </div>
           <div class ="container-premios"> 
             <asp:Label ID="lblPremioDos" runat="server" Text="NombreProducto"></asp:Label>
             <asp:Image ID="ImgPremioDos" runat="server"/>
             <asp:Label ID="lblDescripcionPremioDos" runat="server" Text="Label"></asp:Label><br />
-            <asp:Button ID="BtnAceptarPremioDos" runat="server" Text="Elegir" OnClick="btnAceptar_Click"/>
+            <asp:Button ID="btnAceptarPremioDos" runat="server" Text="Elegir" OnClick="btnAceptar_Click"/>
         </div>
         <div class ="container-premios"> 
             <asp:Label ID="lblPremioTres" runat="server" Text="NombreProducto"></asp:Label>

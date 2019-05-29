@@ -12,7 +12,6 @@ namespace TP_WEB_BARRACHINA_GARCIA
     public partial class About : Page
 
     {
-        private Usuario unUsuario = null;
         private UsuarioNegocio unUsuarioNegocio = new UsuarioNegocio();
         private VoucherNegocio unVoucherNegocio = new VoucherNegocio();
 
@@ -47,19 +46,19 @@ namespace TP_WEB_BARRACHINA_GARCIA
         protected void tboxDNI_TextChanged(object sender, EventArgs e)
         {
             
-            unUsuario = unUsuarioNegocio.BusquedaUsuario(tboxDNI.Text);
+            //unUsuario = unUsuarioNegocio.BusquedaUsuario(tboxDNI.Text);
 
-            if (unUsuario != null) {
+            //if (unUsuario != null) {
 
-                tboxApellido.Text = unUsuario.Apellido;
-                tboxNombre.Text = unUsuario.Nombre;
-                tboxApellido.Text = unUsuario.Apellido;
-                tboxDNI.Text = unUsuario.DNI;
-                tboxMail.Text = unUsuario.Mail;
-                tboxDireccion.Text  = unUsuario.Direccion;
-                tboxCiudad.Text = unUsuario.Ciudad;
-                tboxCP.Text = unUsuario.CodigoPostal;
-            }
+            //    tboxApellido.Text = unUsuario.Apellido;
+            //    tboxNombre.Text = unUsuario.Nombre;
+            //    tboxApellido.Text = unUsuario.Apellido;
+            //    tboxDNI.Text = unUsuario.DNI;
+            //    tboxMail.Text = unUsuario.Mail;
+            //    tboxDireccion.Text  = unUsuario.Direccion;
+            //    tboxCiudad.Text = unUsuario.Ciudad;
+            //    tboxCP.Text = unUsuario.CodigoPostal;
+            //}
         }
     }
 }

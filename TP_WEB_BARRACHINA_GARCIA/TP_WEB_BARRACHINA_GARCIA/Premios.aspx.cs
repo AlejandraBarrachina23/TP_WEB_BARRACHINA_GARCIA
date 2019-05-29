@@ -37,9 +37,9 @@ namespace TP_WEB_BARRACHINA_GARCIA
             string BotonActivo = Boton.ID;
             string CodigoPremio = "";
 
-            if (BotonActivo == "BtnAceptarPremioUno") { CodigoPremio = 1.ToString(); }
-            else if (BotonActivo == "BtnAceptarPremioDos") { CodigoPremio = 2.ToString(); }
-            else if (BotonActivo == "BtnAceptarPremioTres") { CodigoPremio = 3.ToString(); }
+            if (BotonActivo == "btnAceptarPremioUno") { CodigoPremio = 1.ToString(); }
+            else if (BotonActivo == "btnAceptarPremioDos") { CodigoPremio = 2.ToString(); }
+            else if (BotonActivo == "btnAceptarPremioTres") { CodigoPremio = 3.ToString(); }
             else { CodigoPremio = 4.ToString(); }
 
             Session["CodigoProducto"] = CodigoPremio;

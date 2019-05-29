@@ -17,7 +17,6 @@ namespace Negocio
             List<Producto> ListadoProductos = new List<Producto>();
             AccesoDatos.AbrirConexion();
             AccesoDatos.DefinirTipoComando("SELECT * FROM Premios");
-            AccesoDatos.EjecutarAccion();
             AccesoDatos.EjecutarConsulta();
            
 

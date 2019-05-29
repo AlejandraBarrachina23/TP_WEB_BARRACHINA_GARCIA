@@ -18,7 +18,6 @@ namespace Negocio
 
             AccederDatos.DefinirTipoComando("Select CodigoVoucher, Estado from Vouchers");
             AccederDatos.AbrirConexion();
-            AccederDatos.EjecutarAccion();
             AccederDatos.EjecutarConsulta();
 
             while (AccederDatos.LectorDatos.Read())
