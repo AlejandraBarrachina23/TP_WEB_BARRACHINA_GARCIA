@@ -133,6 +133,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="estilos\estilos.css" />
     <Content Include="Mensaje.aspx" />
     <Content Include="images\2f82036a-52dc-475d-ba2a-8d1d3eb2b3f4_1.896bb387e318320e4ec0f145692305e6.jpeg" />
     <Content Include="images\61679ihvfzL._SY355_.jpg" />

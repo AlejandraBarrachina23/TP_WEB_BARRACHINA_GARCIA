@@ -52,9 +52,9 @@ namespace TP_WEB_BARRACHINA_GARCIA
                 unVoucher.Estado = true;            
                 unVoucherNegocio.AsignacionVoucher(unVoucher);
                 
-                Utilidades utilidades = new Utilidades();
-                utilidades.EnviarMail("code.test.aspx@gmail.com", "alejandrabarrachina23@gmail.com", "codetest1234", "Prueba");
-                Session["Mensaje"] = "Gracias por participar.";
+                //Utilidades utilidades = new Utilidades();
+                //utilidades.EnviarMail("code.test.aspx@gmail.com", "alejandrabarrachina23@gmail.com", "codetest1234", "Prueba");
+                Session["Mensaje"] = "GRACIAS POR PARTICIPAR.";
                 Response.Redirect("Mensaje.aspx");
 
         }

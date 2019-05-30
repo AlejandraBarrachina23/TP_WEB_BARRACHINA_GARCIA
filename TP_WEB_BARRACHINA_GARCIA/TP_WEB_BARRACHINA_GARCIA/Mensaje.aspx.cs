@@ -15,7 +15,7 @@ namespace TP_WEB_BARRACHINA_GARCIA
         {
             
             lblMensajeError.Text = Session["Mensaje"].ToString();
-            Response.AddHeader("REFRESH", "5;URL=Index.aspx");
+            Response.AddHeader("REFRESH", "3;URL=Index.aspx");
            
         }
     }

@@ -33,13 +33,13 @@ namespace TP_WEB_BARRACHINA_GARCIA
 
             else if (unVoucher.BusquedaVoucher(unNuevoVoucher) == 3) {
 
-                Session["Mensaje"] = "El codigo " + tboxVoucher.Text + " no existe.";
+                Session["Mensaje"] = "EL CODIGO " + tboxVoucher.Text + " NO EXISTE.";
                 Response.Redirect("Mensaje.aspx");
             }
 
             else
             {
-                Session["Mensaje"] = "El voucher " + tboxVoucher.Text + " ya tiene asignado un participante.";
+                Session["Mensaje"] = "EL VOUCHER " + tboxVoucher.Text + " YA TIENE ASIGNADO UN PARTICIPANTE.";
                 Response.Redirect("Mensaje.aspx");
             }
         }
