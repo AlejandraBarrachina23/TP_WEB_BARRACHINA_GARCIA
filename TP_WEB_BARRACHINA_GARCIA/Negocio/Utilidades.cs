@@ -21,7 +21,7 @@ namespace Negocio
             Email.From = new MailAddress(From);
             Email.Body = Mensaje;
             Email.BodyEncoding = System.Text.Encoding.UTF8;
-            Email.Subject = "Promoción";
+            Email.Subject = "Inscripción - Mi primer instrumento";
             Email.SubjectEncoding = System.Text.Encoding.UTF8;
             Email.IsBodyHtml = true;
 

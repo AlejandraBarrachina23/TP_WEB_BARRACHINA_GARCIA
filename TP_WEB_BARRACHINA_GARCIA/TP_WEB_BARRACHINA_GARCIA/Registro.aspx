@@ -43,11 +43,7 @@
          }
 
 
-    </style>
-  
-
-
-    
+    </style>      
 
     <div class ="form-register">
         <h1>REGISTRO</h1>

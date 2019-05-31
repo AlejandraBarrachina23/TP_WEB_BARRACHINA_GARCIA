@@ -10,7 +10,7 @@
             background-attachment: local;
             background-position: center;
             background-size: cover;
-            color:black;
+            color:white;
             font-family: 'Oswald', sans-serif;
                     
         }
@@ -26,6 +26,7 @@
             width: 250px;
             height:500px;
             padding: 10px;
+            background:rgba(0,0,0,.5);
             margin:10px;
             border:1px solid;
             text-align: center;
@@ -47,6 +48,7 @@
             height:200px;
             margin:15px;
             border: 1px solid;
+            opacity:1;
         
         }
 

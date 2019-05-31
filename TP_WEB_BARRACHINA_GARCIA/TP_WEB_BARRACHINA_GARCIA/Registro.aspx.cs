@@ -27,6 +27,7 @@ namespace TP_WEB_BARRACHINA_GARCIA
             Voucher unVoucher = new Voucher();
             unVoucher = (Voucher)Session["Voucher"];
 
+
             if (!(bool)Session["RegistroUsuario"])
             {
                 unNuevoUsuario.Nombre = tboxNombre.Text;
@@ -52,8 +53,8 @@ namespace TP_WEB_BARRACHINA_GARCIA
                 unVoucher.Estado = true;            
                 unVoucherNegocio.AsignacionVoucher(unVoucher);
                 
-                //Utilidades utilidades = new Utilidades();
-                //utilidades.EnviarMail("code.test.aspx@gmail.com", "alejandrabarrachina23@gmail.com", "codetest1234", "Prueba");
+                Utilidades utilidades = new Utilidades();
+                utilidades.EnviarMail("code.test.aspx@gmail.com", tboxMail.Text, "codetest1234", "Ya estas inscripto en el sorteo 'Tu Primer Instrumento'");
                 Session["Mensaje"] = "GRACIAS POR PARTICIPAR.";
                 Response.Redirect("Mensaje.aspx");
 
