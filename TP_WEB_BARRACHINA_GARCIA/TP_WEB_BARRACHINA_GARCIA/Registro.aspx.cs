@@ -18,7 +18,7 @@ namespace TP_WEB_BARRACHINA_GARCIA
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           btnAceptar.Attributes.Add("OnClick", "mostrar();");
         }
 
         protected void btnAceptar_Click(object sender, EventArgs e)
@@ -42,21 +42,22 @@ namespace TP_WEB_BARRACHINA_GARCIA
 
             }
 
-            else {
+            else
+            {
 
                 unNuevoUsuario.DNI = tboxDNI.Text;
                 unVoucher.Participante = unNuevoUsuario.DNI;
 
             }
-                
-                unVoucher.CodigoProducto = Session["CodigoProducto"].ToString();
-                unVoucher.Estado = true;            
-                unVoucherNegocio.AsignacionVoucher(unVoucher);
-                
-                Utilidades utilidades = new Utilidades();
-                utilidades.EnviarMail("code.test.aspx@gmail.com", tboxMail.Text, "codetest1234", "Ya estas inscripto en el sorteo 'Tu Primer Instrumento'");
-                Session["Mensaje"] = "GRACIAS POR PARTICIPAR.";
-                Response.Redirect("Mensaje.aspx");
+
+            unVoucher.CodigoProducto = Session["CodigoProducto"].ToString();
+            unVoucher.Estado = true;
+            unVoucherNegocio.AsignacionVoucher(unVoucher);
+
+            Utilidades utilidades = new Utilidades();
+            utilidades.EnviarMail("code.test.aspx@gmail.com", tboxMail.Text, "codetest1234", "Ya estas inscripto en el sorteo 'Tu Primer Instrumento'");
+            Session["Mensaje"] = "GRACIAS POR PARTICIPAR.";
+            Response.Redirect("Mensaje.aspx");
 
         }
         
@@ -92,5 +93,6 @@ namespace TP_WEB_BARRACHINA_GARCIA
 
             Session["RegistroUsuario"] = Registrado;
         }
+
     }
 }

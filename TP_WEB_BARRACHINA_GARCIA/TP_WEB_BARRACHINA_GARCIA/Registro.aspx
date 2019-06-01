@@ -18,15 +18,18 @@
         .form-register {
         
             margin:0 auto;
-            width:100%;
+            padding:10px;
+            width:30%;
             text-align:center;
+            background:rgba(0,0,0,.5);
         }
 
         .input{
 
             color:black;
-            width:300px;
+            width:60%;
             margin:1px;
+            text-align:center;
 
         }
 
@@ -35,9 +38,9 @@
              background-color:#292524;
              font-size:14px;
              color:white;
-             width:80px;
+             width:20%;
              padding:3px;
-             margin-top: 10px;
+             margin-top: 1px;
              height:33px;
              border-style: hidden;
          }
@@ -46,7 +49,7 @@
     </style>      
 
     <div class ="form-register">
-        <h1>REGISTRO</h1>
+        <h1>3.Registrate</h1>
         <div class="form-groups"> 
 		    <asp:Label ID="lblDNI" runat="server" Text="DNI"></asp:Label><br />
 		    <asp:TextBox ID="tboxDNI" class="input" runat="server" OnTextChanged="tboxDNI_TextChanged" AutoPostBack="true"></asp:TextBox><br />
@@ -83,7 +86,7 @@
 			<asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="tboxCP" Text="Debe ingresar el Código Postal"></asp:RequiredFieldValidator>
 
 		</div>
-		    <asp:Button ID="btnAceptar" class="boton" runat="server" Text="Participar" OnClick="btnAceptar_Click" ValidationGroup="form-register"/>
+		    <asp:Button ID="btnAceptar" class="boton" runat="server" Text="Participar" ValidationGroup="form-register" OnClick="btnAceptar_Click" />
         </div>
 
 </asp:Content>

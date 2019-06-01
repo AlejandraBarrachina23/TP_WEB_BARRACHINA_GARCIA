@@ -28,7 +28,7 @@
             padding: 10px;
             background:rgba(0,0,0,.5);
             margin:10px;
-            border:1px solid;
+
             text-align: center;
             float:left;
         

@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Anton|Oswald|Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="estilos/estilos.css" rel="stylesheet" type ="text/css" />
+    <script src="Scripts/funciones.js" type ="text/javascript"></script>
 
     <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
 
