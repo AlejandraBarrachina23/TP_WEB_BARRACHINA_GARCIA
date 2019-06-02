@@ -25,7 +25,7 @@ namespace Negocio
 
             Usuario unUsuario = new Usuario();
             AccederDatos.AbrirConexion();
-            AccederDatos.DefinirTipoComando("SELECT * FROM Participantes WHERE DNI = " + NumeroDNI);
+            AccederDatos.DefinirTipoComando("SELECT * FROM Participantes WHERE DNI = '" + NumeroDNI+"'");
             AccederDatos.EjecutarConsulta();
             while (AccederDatos.LectorDatos.Read()) {
 
@@ -39,7 +39,6 @@ namespace Negocio
                 AccederDatos.CerrarReader();
                 return unUsuario;
             }
-
             return null;
         }
     }

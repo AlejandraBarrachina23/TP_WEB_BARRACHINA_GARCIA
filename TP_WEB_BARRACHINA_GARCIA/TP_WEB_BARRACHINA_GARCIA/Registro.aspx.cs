@@ -23,6 +23,9 @@ namespace TP_WEB_BARRACHINA_GARCIA
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
+            Page.Validate();
+            if (!Page.IsValid) return;
+
             Usuario unNuevoUsuario = new Usuario();
             Voucher unVoucher = new Voucher();
             unVoucher = (Voucher)Session["Voucher"];
