@@ -67,13 +67,13 @@ namespace TP_WEB_BARRACHINA_GARCIA {
         protected global::System.Web.UI.WebControls.TextBox tboxApellido;
         
         /// <summary>
-        /// Control RequiredFieldValidator2.
+        /// Control ValidadorApellidoVacio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidadorApellidoVacio;
         
         /// <summary>
         /// Control ValidadorSoloLetrasApellido.
@@ -103,13 +103,13 @@ namespace TP_WEB_BARRACHINA_GARCIA {
         protected global::System.Web.UI.WebControls.TextBox tboxNombre;
         
         /// <summary>
-        /// Control RequiredFieldValidator3.
+        /// Control ValiadorNombreVacio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValiadorNombreVacio;
         
         /// <summary>
         /// Control ValidadorSoloLetrasNombre.
@@ -139,22 +139,22 @@ namespace TP_WEB_BARRACHINA_GARCIA {
         protected global::System.Web.UI.WebControls.TextBox tboxMail;
         
         /// <summary>
-        /// Control RequiredFieldValidator7.
+        /// Control ValidadorMailVacio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidadorMailVacio;
         
         /// <summary>
-        /// Control RegularExpressionValidator1.
+        /// Control ValidadorFormatoMail.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator ValidadorFormatoMail;
         
         /// <summary>
         /// Control lblDireccion.
@@ -175,13 +175,13 @@ namespace TP_WEB_BARRACHINA_GARCIA {
         protected global::System.Web.UI.WebControls.TextBox tboxDireccion;
         
         /// <summary>
-        /// Control RequiredFieldValidator4.
+        /// Control ValidadorDireccionVacia.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidadorDireccionVacia;
         
         /// <summary>
         /// Control lblCiudad.
@@ -202,22 +202,22 @@ namespace TP_WEB_BARRACHINA_GARCIA {
         protected global::System.Web.UI.WebControls.TextBox tboxCiudad;
         
         /// <summary>
-        /// Control RequiredFieldValidator5.
+        /// Control ValidadorCiudadVacia.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidadorCiudadVacia;
         
         /// <summary>
-        /// Control RegularExpressionValidator2.
+        /// Control ValidarSoloLetrasCiudad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator ValidarSoloLetrasCiudad;
         
         /// <summary>
         /// Control lblCP.
@@ -238,22 +238,22 @@ namespace TP_WEB_BARRACHINA_GARCIA {
         protected global::System.Web.UI.WebControls.TextBox tboxCP;
         
         /// <summary>
-        /// Control RequiredFieldValidator6.
+        /// Control ValidarCPVacio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidarCPVacio;
         
         /// <summary>
-        /// Control RegularExpressionValidator3.
+        /// Control ValidarSoloNumeros.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator3;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator ValidarSoloNumeros;
         
         /// <summary>
         /// Control btnAceptar.
