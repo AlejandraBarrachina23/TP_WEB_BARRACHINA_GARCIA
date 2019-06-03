@@ -1,1 +1,140 @@
 ﻿
+
+body {
+   
+    background-image: url(https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-attachment: inherit;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+/*WEB FORM MENSAJE*/
+.mensaje {
+   
+    color: white;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 180px;
+}
+
+/*WEB FORM REGISTRO*/
+.form-register {
+
+    margin: 0 auto;
+    padding: 10px;
+    color:white;
+    width: 30%;
+    text-align: center;
+    background: rgba(0,0,0,.5);
+    font-family: 'Oswald', sans-serif;
+}
+
+.errorPrincipal {
+    color: red;
+    position: relative;
+
+}
+
+.errorSecundario {
+    color: red;
+    position: absolute;
+    left: 46%;
+
+}
+
+.inputIngreso {
+    color: black;
+    width: 15%;
+    height:10%;
+    margin: 1px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.input {
+    color: black;
+    width: 60%;
+    margin: 1px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.boton {
+    background-color: #292524;
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+    width: 80px;
+    padding: 3px;
+    height: 33px;
+    border-style: hidden;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*WEB FORM INGRESO*/
+
+.form-header {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 350px;
+    height: 150px;
+    text-align: center;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.form-header h1 {
+       
+        font-family: 'Anton', sans-serif;
+    }
+
+.form-voucher {
+   
+    height: 300px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    font-size: medium;
+}
+
+
+/*WEB FORM PREMIOS*/
+
+.main-container {
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    text-align:center;
+}
+
+.container-premios {
+    
+    width: 250px;
+    height: 500px;
+    padding: 10px;
+    background: rgba(0,0,0,.5);
+    margin: 10px;
+    text-align: center;
+    float: left;
+    font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    color: black;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    border: 1px solid;
+    opacity: 1;
+}
+

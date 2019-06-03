@@ -18,7 +18,7 @@ namespace TP_WEB_BARRACHINA_GARCIA
 
         protected void Page_Load(object sender, EventArgs e)
         {
-           btnAceptar.Attributes.Add("OnClick", "mostrar();");
+                        
         }
 
         protected void btnAceptar_Click(object sender, EventArgs e)

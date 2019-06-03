@@ -1,67 +1,6 @@
 ﻿<%@ Page Title="Registro" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="TP_WEB_BARRACHINA_GARCIA.About" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    
-    <style> 
-          
-        body {
-            background-image: url(https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-            background-attachment: inherit;
-            background-position: center;
-            background-size: cover;
-            color:white;
-            font-family: 'Oswald', sans-serif;
-                    
-        }
-
-        .form-register {
-        
-            margin:0 auto;
-            padding:10px;
-            width:30%;
-            text-align:center;
-            background:rgba(0,0,0,.5);
-        }
-
-        .input{
-
-            color:black;
-            width:60%;
-            margin:1px;
-            text-align:center;
-
-        }
-
-        .boton {
-
-             background-color:#292524;
-             font-size:14px;
-             color:white;
-             width:20%;
-             padding:3px;
-             margin-top: 1px;
-             height:33px;
-             border-style: hidden;
-         }
-
-        .errorPrincipal {
-            
-            color:red;
-            position:relative;   
-                    
-        }
-
-        .errorSecundario {
-               
-            color:red;
-            position:absolute;
-            left:46%;
-            
-        }
-
-
-    </style>      
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">     
 
     <div class ="form-register">
         <h1>3.Registrate</h1>
